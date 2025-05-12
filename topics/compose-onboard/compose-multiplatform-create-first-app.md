@@ -234,17 +234,8 @@ in IntelliJ IDEA and select your device in the **Execution target** list. Run th
 
 ### Run your application on desktop
 
-You can create a run configuration for running the desktop application as follows:
-
-1. Select **Run | Edit Configurations** from the main menu.
-2. Click the plus button and choose **Gradle** from the dropdown list.
-3. In the **Tasks and arguments** field, paste this command:
-   ```shell
-   composeApp:run
-   ```
-4. Click **OK**.
-
-Now, you can use this configuration to run the desktop app in its own OS window:
+Select **composeApp [desktop]** in the list of run configurations and click **Run**. By default, the run configuration
+starts a desktop app in its own OS window:
 
 ![Run the Compose Multiplatform app on desktop](compose-run-desktop-temp.png){width=350}
 
@@ -252,19 +243,7 @@ Now, you can use this configuration to run the desktop app in its own OS window:
 
 ### Run your web application
 
-Create a run configuration to run the web application:
-
-1. Select **Run | Edit Configurations** from the main menu.
-2. Click the plus button and choose **Gradle** from the dropdown list.
-3. In the **Tasks and arguments** field, paste this command:
-
-   ```shell
-   wasmJsBrowserRun -t --quiet
-   ```
-
-4. Click **OK**.
-
-Now, you can use this configuration to run the web app:
+Select **composeApp [wasmJs]** in the list of run configurations and click **Run**.
 
 ![Run the Compose Multiplatform app on desktop](compose-run-web.png){width=350}
 
